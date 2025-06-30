@@ -5,14 +5,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
-
 @Entity
 @Table(name = "usuario")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class Usuario {
 
   @Id
@@ -31,8 +28,5 @@ public class Usuario {
   @Column(nullable=false)
   private String correo;
 
-  
-
-
-
+  // Elimina el método setId(long)
 }
